@@ -25,8 +25,7 @@ const MainHeader = ({ toggleSidebar }) => {
       </div>
 
       <p className=" dark:text-white text-sm md:text-base text-black">
-        <span className="md:pr-1 block">Welcome back,</span>
-        {user?.name}
+        <span className="md:pr-1 block">Welcome back, {user?.name}</span>
       </p>
       <div className="flex items-center gap-3">
         <form
