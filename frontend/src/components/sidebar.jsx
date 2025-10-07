@@ -55,7 +55,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 
           <div
             onClick={toggleSidebar}
-            className={` text-[0.9rem] pl-3 pr-2 rounded-full bg-black text-white text-center border-gray-400 py-[0.6rem] font-semibold ${
+            className={` text-[0.9rem] pl-3 pr-2 rounded-full bg-lightBlue dark:bg-white text-white dark:text-primaryBlack text-center border-gray-400 py-[0.6rem] font-semibold ${
               isOpen && "-mr-8"
             }`}
           >

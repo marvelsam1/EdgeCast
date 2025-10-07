@@ -2,7 +2,7 @@ import React from "react";
 
 const Watchlist = () => {
   return (
-    <div className=" min-h-screen p-6">
+    <div className=" min-h-screen py-6 px-2">
       <div className="flex flex-col lg:flex-row gap-6">
         {/* Left Section */}
         <div className="flex-1 bg-gradient-to-br bg-white dark:bg-primaryBlack rounded-2xl shadow-lg p-8">
@@ -27,7 +27,7 @@ const Watchlist = () => {
             <input
               type="text"
               placeholder="Search assets..."
-              className="border-gray-200 border dark:border-gray-800 rounded-lg px-4 py-2 text-sm flex-1 bg-white dark:bg-primaryBlack shadow focus:outline-none"
+              className="border-gray-200 border dark:border-gray-800 rounded-lg md:px-4 hidden md:block py-2 text-sm flex-1 bg-white dark:bg-primaryBlack shadow focus:outline-none"
             />
           </div>
           <div className="overflow-x-auto">

@@ -24,8 +24,8 @@ const MainHeader = ({ toggleSidebar }) => {
         </button>
       </div>
 
-      <p className=" dark:text-white text-black">
-        <span className="pr-1">Welcome back,</span>
+      <p className=" dark:text-white text-sm md:text-base text-black">
+        <span className="md:pr-1 block">Welcome back,</span>
         {user?.name}
       </p>
       <div className="flex items-center gap-3">

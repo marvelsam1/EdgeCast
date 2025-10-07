@@ -39,8 +39,8 @@ const Index = () => {
     <div className="dark:text-white text-black p-2 pr-3">
       <h1 className="md:text-2xl text-lg">Dashboard</h1>
 
-      <div className="flex items-center w-full justify-between gap-2 mt-2">
-        <div className="rounded-xl border-[1px] border-gray-200 dark:border-gray-800 bg-white dark:bg-primaryBlack w-[25%] py-4 px-6">
+      <div className="flex md:flex-row flex-col items-center w-full justify-between gap-2 mt-2">
+        <div className="rounded-xl border-[1px] border-gray-200 dark:border-gray-800 bg-white dark:bg-primaryBlack md:w-[25%] w-full py-4 px-6">
           <div className="flex items-center justify-between">
             <h1 className="text-sm">Total Predictions</h1>
             <MdOutlineSettingsInputComponent />
@@ -52,14 +52,14 @@ const Index = () => {
           </div>
         </div>
 
-        <div className="rounded-xl border-[1px] border-gray-200 dark:border-gray-800 bg-white dark:bg-primaryBlack w-[25%] py-5 px-6">
+        <div className="rounded-xl border-[1px] border-gray-200 dark:border-gray-800 bg-white dark:bg-primaryBlack md:w-[25%] w-full py-5 px-6">
           <div className="flex items-center justify-between">
             <h1 className="text-sm">Win rate</h1>
             <LuSignalHigh />
           </div>
 
           <div className="pt-3">
-            <p className="text-xl">70%</p>
+            <p className="text-xl">40%</p>
             <div className="w-full bg-gray-200 rounded-full h-2">
               <div
                 className={`bg-lightBlue h-full transition-all rounded-full duration-1000 ease-out`}
@@ -68,7 +68,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-        <div className="rounded-xl border-[1px] border-gray-200 dark:border-gray-800 bg-white dark:bg-primaryBlack w-[25%] py-4 px-6">
+        <div className="rounded-xl border-[1px] border-gray-200 dark:border-gray-800 bg-white dark:bg-primaryBlack md:w-[25%] w-full py-4 px-6">
           <div className="flex items-center justify-between">
             <h1 className="text-sm">Total Staked</h1>
             <LuAlignVerticalSpaceBetween />
@@ -79,7 +79,7 @@ const Index = () => {
             <p className="text-[0.6rem]">across all predictions</p>
           </div>
         </div>
-        <div className="rounded-xl border-[1px] border-gray-200 dark:border-gray-800 bg-white dark:bg-primaryBlack w-[25%] py-4 px-6">
+        <div className="rounded-xl border-[1px] border-gray-200 dark:border-gray-800 bg-white dark:bg-primaryBlack md:w-[25%] w-full py-4 px-6">
           <div className="flex items-center justify-between">
             <h1 className="text-sm">Leader Rank</h1>
             <GoTrophy />
@@ -92,7 +92,7 @@ const Index = () => {
         </div>
       </div>
 
-      <div className="flex gap-2  h-[50%] my-3">
+      <div className="flex md:flex-row flex-col gap-2  h-[50%] my-3">
         <div className="md:w-[70%] h-full bg-center bg-cover">
           {/* <CandleChart /> */}
           <div className="flex-1 bg-gradient-to-br bg-white dark:bg-primaryBlack rounded-2xl shadow-lg p-8">
@@ -117,7 +117,7 @@ const Index = () => {
               <input
                 type="text"
                 placeholder="Search assets..."
-                className="border-gray-200 border dark:border-gray-800 rounded-lg px-4 py-2 text-sm flex-1 bg-white dark:bg-primaryBlack shadow focus:outline-none"
+                className="border-gray-200 border dark:border-gray-800 rounded-lg md:px-4 px-2 py-2 text-sm flex-1 bg-white dark:bg-primaryBlack shadow focus:outline-none"
               />
             </div>
             <div className="overflow-x-auto">
@@ -281,9 +281,9 @@ const Index = () => {
           ))}
         </div>
       </div>
-      <div className="flex gap-6 mt-6">
+      <div className="flex md:flex-row flex-col gap-6 mt-6">
         {/* Active Predictions */}
-        <div className="w-1/2 bg-white dark:bg-primaryBlack rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+        <div className="md:w-1/2 w-full bg-white dark:bg-primaryBlack rounded-xl border border-gray-200 dark:border-gray-800 p-5">
           <h2 className="flex items-center gap-2 text-base font-semibold mb-2">
             <LuSignalHigh className="text-lightBlue" />
             Active Predictions
@@ -357,7 +357,7 @@ const Index = () => {
           ))}
         </div>
         {/* Recent Results */}
-        <div className="w-1/2 bg-white dark:bg-primaryBlack rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+        <div className="md:w-1/2 w-full bg-white dark:bg-primaryBlack rounded-xl border border-gray-200 dark:border-gray-800 p-5">
           <h2 className="flex items-center gap-2 text-base font-semibold mb-2">
             <GoTrophy className="text-lightBlue" />
             Recent Results

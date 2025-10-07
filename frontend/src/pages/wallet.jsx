@@ -27,7 +27,7 @@ const Wallet = () => {
   };
 
   return (
-    <div className="min-h-screen text-white font-inter p-8 ">
+    <div className="min-h-screen text-white font-inter py-8  ">
       {/* Upgrade Banner */}
       <div className="bg-gradient-to-r from-[#6C47FF] to-[#1E90FF] rounded-2xl p-6 flex items-center mb-8 justify-between">
         <div>
@@ -45,10 +45,10 @@ const Wallet = () => {
         <div className="flex gap-4 ml-8">
           <span className="text-[32px]">₿</span>
           <span className="text-[32px]">🟦</span>
-          <span className="text-[32px]">🔷</span>
+          <span className="text-[32px] hidden md:block">🔷</span>
         </div>
       </div>
-      <div className="flex gap-8 mb-8">
+      <div className="flex md:flex-row flex-col gap-8 mb-8">
         {/* Stats */}
         <div className="flex gap-6">
           <div className="bg-[#A3FFB0] text-[#181A20] rounded-xl px-8 py-6 min-w-[140px] text-center">
@@ -59,7 +59,7 @@ const Wallet = () => {
             <div className="text-2xl font-bold">$2,556</div>
             <div className="text-sm font-medium">Total Deposits</div>
           </div>
-          <div className="dark:bg-[#23262F] bg-white border-gray-200 dark:border-gray-800 border text-secondaryBlack dark:text-white rounded-xl px-8 py-6 min-w-[140px] text-center">
+          <div className="dark:bg-[#23262F] bg-white hidden md:block border-gray-200 dark:border-gray-800 border text-secondaryBlack dark:text-white rounded-xl px-8 py-6 min-w-[140px] text-center">
             <div className="text-2xl font-bold">+8.6%</div>
             <div className="text-sm font-medium">APY</div>
           </div>
@@ -74,7 +74,7 @@ const Wallet = () => {
         </div>
       </div>
       {/* Main Section */}
-      <div className="flex gap-8">
+      <div className="flex md:flex-row flex-col gap-8">
         {/* Portfolio Performance */}
         <div className="dark:bg-[#23262F] bg-white border-gray-200 dark:border-gray-800 border text-secondaryBlack dark:text-white rounded-2xl p-6 flex-2 min-w-0 w-full">
           <div className="font-semibold text-lg mb-4">

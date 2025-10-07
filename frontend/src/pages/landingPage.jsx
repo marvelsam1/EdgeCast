@@ -44,7 +44,7 @@ const LandingPage = () => {
         <section className="relative text-white flex flex-col items-center justify-center py-16 px-4">
           <div className="absolute inset-0 z-0 pointer-events-none"></div>
           <div className="relative z-10 flex pt-7 flex-col items-center">
-            <h1 className="text-3xl md:text-6xl font-bold text-center mb-2">
+            <h1 className="text-5xl md:text-6xl font-bold text-center mb-2">
               PREDICT, STAKE <br className="hidden md:block" />{" "}
               <span className="text-orange-500">& WIN</span>
             </h1>
@@ -52,14 +52,14 @@ const LandingPage = () => {
               Turn the edge of your predictions into crypto rewards. Stake,
               predict, and win on the future of markets.
             </p>
-            <div className="flex items-center gap-3">
+            <div className="flex md:flex-row flex-col items-center gap-3">
               <button
                 onClick={() => navigate("/signup")}
                 className="bg-blue-500 cursor-pointer hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold text-lg transition-all"
               >
                 Get Started
               </button>
-              <button className=" hover:bg-blue-600 border text-white px-6 py-3 rounded-lg font-semibold text-lg transition-all">
+              <button className=" hover:bg-blue-600 border-[2px] border-gray-200 text-white px-6 py-3 rounded-lg font-semibold text-lg transition-all">
                 View active games
               </button>
             </div>
@@ -202,7 +202,7 @@ const LandingPage = () => {
       <footer className="bg-[#181c2b] text-white py-8 px-4 mt-auto">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <img src="/logo.svg" alt="EdgeCast Logo" className="h-6 w-6" />
+            {/* <img src={Logo} alt="EdgeCast Logo" className="w-[2rem] h-[2rem]" /> */}
             <span className="font-bold text-lg">EdgeCast</span>
           </div>
           <div className="flex gap-4 text-sm">
@@ -216,7 +216,7 @@ const LandingPage = () => {
               Contact
             </a>
           </div>
-          <div className="flex gap-3">
+          {/* <div className="flex gap-3">
             <a href="#">
               <img src="/icon-twitter.svg" alt="Twitter" className="h-5" />
             </a>
@@ -226,7 +226,7 @@ const LandingPage = () => {
             <a href="#">
               <img src="/icon-telegram.svg" alt="Telegram" className="h-5" />
             </a>
-          </div>
+          </div> */}
         </div>
         <div className="text-center text-xs text-gray-400 mt-4">
           &copy; {new Date().getFullYear()} EdgeCast. All rights reserved.

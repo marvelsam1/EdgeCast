@@ -1,4 +1,7 @@
 import React from "react";
+import Bitcoin from "../assets/icons/bitcoin.png";
+import Ethereum from "../assets/icons/ethereum.png";
+import Tron from "../assets/icons/tron.png";
 
 const Prediction = () => {
   const [selectedPair, setSelectedPair] = React.useState("BTC/USDT");
@@ -50,10 +53,10 @@ const Prediction = () => {
             <button className="px-4 py-2 rounded-lg dark:bg-gray-800 bg-white  dark:text-gray-200 text-secondaryBlack font-medium border border-gray-200 dark:border-gray-800 hover:bg-gray-700 transition">
               Month
             </button>
-            <button className="px-4 py-2 rounded-lg dark:bg-gray-800 bg-white  dark:text-gray-200 text-secondaryBlack font-medium border border-gray-200 dark:border-gray-800 hover:bg-gray-700 transition">
+            <button className="px-4 py-2 hidden md:block rounded-lg dark:bg-gray-800 bg-white  dark:text-gray-200 text-secondaryBlack font-medium border border-gray-200 dark:border-gray-800 hover:bg-gray-700 transition">
               Year
             </button>
-            <div className="ml-4 px-4 py-2 rounded-lg dark:bg-gray-900 bg-white  dark:text-gray-300 text-secondaryBlack font-medium border border-gray-200 dark:border-gray-800">
+            <div className="ml-4 px-4 py-2 hidden md:block rounded-lg dark:bg-gray-900 bg-white  dark:text-gray-300 text-secondaryBlack font-medium border border-gray-200 dark:border-gray-800">
               <span className="mr-2">18 Jan, 2025</span>
               <span className="mx-1">–</span>
               <span>18 Jun, 2025</span>
@@ -64,11 +67,7 @@ const Prediction = () => {
           <div className="bg-white  dark:bg-gray-900 rounded-2xl p-6 shadow-lg border dark:border-gray-700 border-gray-200">
             <div className="flex items-center mb-4">
               <div className="bg-gray-700 rounded-full p-3 mr-3">
-                <img
-                  src="https://cryptologos.cc/logos/ethereum-eth-logo.png"
-                  alt="ETH"
-                  className="w-8 h-8"
-                />
+                <img src={Ethereum} alt="ETH" className="w-8 h-8" />
               </div>
               <div>
                 <div className="text-lg font-semibold dark:text-white text-secondaryBlack">
@@ -102,11 +101,7 @@ const Prediction = () => {
           <div className="bg-white  dark:bg-gray-900 rounded-2xl p-6 shadow-lg border dark:border-gray-700 border-gray-200">
             <div className="flex items-center mb-4">
               <div className="bg-red-700 rounded-full p-3 mr-3">
-                <img
-                  src="https://cryptologos.cc/logos/tron-trx-logo.png"
-                  alt="TRX"
-                  className="w-8 h-8"
-                />
+                <img src={Tron} alt="TRX" className="w-8 h-8" />
               </div>
               <div>
                 <div className="text-lg font-semibold dark:text-white text-secondaryBlack">
@@ -140,11 +135,7 @@ const Prediction = () => {
           <div className="bg-white  dark:bg-gray-900 rounded-2xl p-6 shadow-lg border dark:border-gray-700 border-gray-200">
             <div className="flex items-center mb-4">
               <div className="bg-purple-700 rounded-full p-3 mr-3">
-                <img
-                  src="https://cryptologos.cc/logos/polygon-matic-logo.png"
-                  alt="POL"
-                  className="w-8 h-8"
-                />
+                <img src={Ethereum} alt="POL" className="w-8 h-8" />
               </div>
               <div>
                 <div className="text-lg font-semibold dark:text-white text-secondaryBlack">
@@ -222,11 +213,7 @@ const Prediction = () => {
                     1
                   </td>
                   <td className="py-3 px-4 flex items-center gap-2">
-                    <img
-                      src="https://cryptologos.cc/logos/bitcoin-btc-logo.png"
-                      alt="BTC"
-                      className="w-6 h-6"
-                    />
+                    <img src={Bitcoin} alt="BTC" className="w-6 h-6" />
                     <span className="dark:text-white text-secondaryBlack font-semibold">
                       Bitcoin BTC
                     </span>
@@ -255,11 +242,7 @@ const Prediction = () => {
                     2
                   </td>
                   <td className="py-3 px-4 flex items-center gap-2">
-                    <img
-                      src="https://cryptologos.cc/logos/ethereum-eth-logo.png"
-                      alt="ETH"
-                      className="w-6 h-6"
-                    />
+                    <img src={Ethereum} alt="ETH" className="w-6 h-6" />
                     <span className="dark:text-white text-secondaryBlack font-semibold">
                       Ethereum ETH
                     </span>
