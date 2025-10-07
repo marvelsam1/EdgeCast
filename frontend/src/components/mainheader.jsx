@@ -11,6 +11,7 @@ import { IoMenuSharp } from "react-icons/io5";
 import { useAuthStore } from "../stores/useAuthStores";
 import ThemeToggle from "./themeToggle";
 import { IoMdNotificationsOutline } from "react-icons/io";
+import { SlMenu } from "react-icons/sl";
 
 const MainHeader = ({ toggleSidebar }) => {
   const navigate = useNavigate();
@@ -20,12 +21,12 @@ const MainHeader = ({ toggleSidebar }) => {
     <div className="bg-white dark:bg-secondaryBlack dark:text-white border-b-[1px] border-b-gray-200 dark:border-b-secondaryBlack fixed top-0 right-0 md:w-[88%] md:pl-28 px-3 w-full md:px-10 py-3 flex items-center justify-between">
       <div className="flex items-center gap-3 lg:hidden">
         <button onClick={toggleSidebar} className=" text-2xl">
-          <IoMenuSharp />
+          <SlMenu />
         </button>
       </div>
 
       <p className=" dark:text-white text-sm md:text-base text-black">
-        <span className="md:pr-1 block">Welcome back, {user?.name}</span>
+        <span className="md:pr-1 pl-1  block">Welcome back, {user?.name}</span>
       </p>
       <div className="flex items-center gap-3">
         <form
